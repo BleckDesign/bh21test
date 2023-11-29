@@ -1,0 +1,655 @@
+/*fonts*/
+@font-face {
+    font-family: Helvetica;
+    src: url(../../../../fonts/Helvetica.ttf);
+}
+@font-face {
+    font-family: Helvetica-bold;
+    src: url(../../../../fonts/Helvetica-Bold-Font.ttf);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100vw;
+    height: 120px;
+    background:#fff ;
+    display: flex;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    padding: 10px 30px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.438);
+    z-index: 20;
+}
+header .headercont {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .headercont .arrowback {
+    height: 80%;
+    width: auto;
+}
+header .headercont .arrowback:hover {
+    cursor: pointer;
+}
+header .headercont .arrowback img {
+    height: 100%;
+    width: auto;
+    transform: rotate(180deg);
+}
+header .headercont .clientlogo {
+    height: 80%;
+    width: auto;
+}
+header .headercont .clientlogo img {
+    height: 100%;
+    width: auto;
+}
+
+
+.mastercont {
+    width: 100vw;
+    height: 100vh;
+    background:url(../../../img/backplataforma.jpg), #80BC00;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    z-index: 1;
+}
+.mastercont .proyectos {
+    width: 80%;
+    background: #fff;
+    height: 80%;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.438);
+    border-radius: 40px 40px 0px 0px;
+    padding: 30px 30px 0px 30px;
+}
+.mastercont .proyectos .proyectoscont {
+    width: 100%;
+    height: 100%;
+    border-radius: 40px 40px 0px 0px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-bottom: 50px;
+}
+
+.crudclients {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.crudclients button {
+    width: 300px;
+    height: 80%;
+    background: #80BC00;
+    font-size: 25px;
+    border: none;
+    color: #fff;
+    font-family: Helvetica-Bold;
+    border-radius: 20px;
+}
+.crudclients button:hover {
+    background: #a7ef0b;
+    cursor: pointer;
+}
+
+.proyecto {
+    width: 100%;
+    height: 150px;
+    background: #80BC00;
+    border-radius: 30px;
+    display: flex;
+    overflow: hidden;
+    transition: 500ms ease;
+}
+.proyecto:hover {
+    background: #a7ef0b;
+    cursor: pointer;
+}
+.proyecto .imgpro {
+    width: 30%;
+    height: 100%;
+    padding: 20px;
+}
+.proyecto .imgpro img {
+    height: 100%;
+}
+.proyecto .imgprodos {
+    width: 30%;
+    height: 100%;
+}
+.proyecto .imgprodos img {
+    width: 100%;
+}
+.proyecto .proinfo {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    color: #fff;
+    padding: 20px;
+}
+.proyecto .proinfo h3 {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 50px;
+    font-family: Helvetica-bold;
+}
+.proyecto .proinfo .proyectxt {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 50px;
+    font-family: Helvetica-bold;
+}
+.proyecto .proinfo .proyectxt h3 {
+    width: 100%;
+    height: auto;
+}
+.proyecto .proinfo .proyectxt h4 {
+    width: 100%;
+    height: auto;
+    font-size: 20px;
+}
+.proyecto .proinfo .clientbuttons {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.proyecto .proinfo .clientbuttons button {
+    width: 100px;
+    height: 50%;
+    border: none;
+    border-radius: 10px;
+    background: #fff;
+    color: #000;
+    font-family: Helvetica;
+    font-size: 15px;
+}
+.proyecto .proinfo .clientbuttons button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.ubicacion {
+    width: 100%;
+    height: 150px;
+    background: #80BC00;
+    border-radius: 30px;
+    display: flex;
+    overflow: hidden;
+    transition: 500ms ease;
+}
+.ubicacion:hover {
+    background: #a7ef0b;
+    cursor: pointer;
+}
+.ubicacion .proinfo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    padding: 20px 40px;
+}
+.ubicacion .proinfo h3 {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 50px;
+    font-family: Helvetica-bold;
+}
+.ubicacion .proinfo .proyectxt {
+    width: 75%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 50px;
+    font-family: Helvetica-bold;
+}
+.ubicacion .proinfo .proyectxt h3 {
+    width: 100%;
+    height: auto;
+}
+.ubicacion .proinfo .proyectxt h4 {
+    width: 100%;
+    height: auto;
+    font-size: 20px;
+}
+.ubicacion .proinfo .clientbuttons {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.ubicacion .proinfo .clientbuttons button {
+    width: 100px;
+    height: 50%;
+    border: none;
+    border-radius: 10px;
+    background: #fff;
+    color: #000;
+    font-family: Helvetica;
+    font-size: 15px;
+}
+.ubicacion .proinfo .clientbuttons button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.clientonfoproyects {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px;
+}
+.clientonfoproyects h4 {
+    width: 40%;
+    font-size: 40px;
+    color: #80BC00;
+    font-family: Helvetica-bold;
+}
+.clientonfoproyects img {
+    height: 100%;
+}
+
+
+
+.inpromaster {
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: flex-end;
+    z-index: 2;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    transition: 500ms ease;
+}
+.inpromaster .inpro {
+    width: 80%;
+    background: #fff;
+    height: 80%;
+    border-radius: 40px 40px 0px 0px;
+    padding: 30px 30px 0px 30px;
+    transform: translateY(100vh);
+    transition: 500ms ease;
+}
+.inpromaster .inpro .inprocont {
+    width: 100%;
+    height: 100%;
+    border-radius: 40px 40px 0px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.inpromaster .inpro .inprocont .arrowhid {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0px;
+    background: rgba(0, 0, 0, 0.09);
+    border-radius: 20px;
+}
+.inpromaster .inpro .inprocont .arrowhid:hover {
+    background: rgba(0, 0, 0, 0.187);
+    cursor: pointer;
+}
+.inpromaster .inpro .inprocont .arrowhid img {
+    height: 100%;
+    transform: rotate(180deg);
+}
+.inpromaster .inpro .inprocont .inproinfcont {
+    width: 100%;
+    height: 60%;
+    overflow-y: scroll;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.inproinf {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    overflow: hidden;
+    justify-content: space-between;
+}
+.inproinf .inproimg {
+    width: 30%;
+    height: 100%;
+    background: #000;
+}
+.inproinf .inproimg img {
+    width: 100%;
+    height: auto;
+}
+.inproinf .infbox {
+    width: 65%;
+    height: 100%;
+    color: #fff;
+}
+.inproinf .infbox h3 {
+    font-size: 50px;
+    font-family: Helvetica-bold;
+}
+.inproinf .infbox p {
+    font-size: 30px;
+    font-family: Helvetica;
+}
+.inprogalery {
+    width: 100%;
+    height: auto;
+}
+.inprogalery img {
+    max-height: 300px;
+}
+
+
+.cortina {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 105;
+}
+.cortina .cortinacont {
+    width: 100%;
+    height: 100%;
+    background: #80BC00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(0vh);
+    transition: 1s ease;
+}
+.cortina .cortinacont img {
+    width: 200px;
+    height: auto;
+}
+
+/* editor de proyectos */
+.editpmaster {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 200;
+    backdrop-filter: blur(6px);
+}
+.editpmaster .shadow {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 201;
+}
+.editpmaster .shadow:hover {
+    cursor: pointer;
+}
+.editpmaster .editpbox {
+    background: #fff;
+    width: 70%;
+    height: 90%;
+    border-radius: 40px;
+    padding: 40px;
+    z-index: 202;
+}
+.editpmaster .editpbox .editpcont {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.editpmaster .editpbox .editpcont .infobox {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.editpmaster .editpbox .editpcont .infobox h5 {
+    width: 100%;
+    font-size: 40px;
+    font-family: Helvetica-Bold;
+    color: #80BC00;
+}
+.editpmaster .editpbox .editpcont .infobox p {
+    width: 100%;
+    font-size: 20px;
+    font-family: Helvetica-Bold;
+    color: #5d5d5d;
+    margin-top: 10px;
+}
+.editpmaster .editpbox .editpcont .formbox {
+    width: 90%;
+    height: 75%;
+    margin-top: 40px;
+    overflow-y: scroll;
+}
+.editpmaster .editpbox .editpcont .formbox form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.editpmaster .editpbox .editpcont .formbox form label {
+    width: 100%;
+    font-size: 25px;
+    margin-top: 20px;
+    font-family: Helvetica-Bold;
+}
+.editpmaster .editpbox .editpcont .formbox form .iptxt {
+    width: 80%;
+    height: 30px;
+    font-size: 15px;
+    margin-top: 5px;
+    font-family: Helvetica-Bold;
+    background: none;
+    border:none;
+    border-bottom: 2px solid #000;
+}
+.editpmaster .editpbox .editpcont .formbox form .iptxt:focus {
+    border-bottom: 2px solid #80BC00;
+    outline: none;
+}
+.editpmaster .editpbox .editpcont .formbox form .observaciones {
+    height: 80px;
+    overflow-y: scroll;
+    display: flex;
+    flex-wrap: wrap;
+}
+.editpmaster .editpbox .editpcont .formbox form .fotos {
+    display: none;
+}
+.editpmaster .editpbox .editpcont .formbox form .lbfotos {
+    width: 30%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 10px;
+    margin-top: 40px;
+    background: #80BC00;
+}
+.editpmaster .editpbox .editpcont .formbox form .lbfotos:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+.editpmaster .editpbox .editpcont .formbox form .buttons {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.editpmaster .editpbox .editpcont .formbox form .buttons button {
+    width: 45%;
+    height: 80px;
+    background: #a7ef0b;
+    font-size: 30px;
+    font-family: Helvetica-Bold;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+}
+.editpmaster .editpbox .editpcont .formbox form .buttons .eliminar {
+    background: #e34d4d;
+}
+.editpmaster .editpbox .editpcont .formbox form .buttons button:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+
+/* Catalogos */
+
+.cgmaster {
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 200;
+}
+.cgmaster .cgshadow {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 201;
+}
+.cgmaster .cgshadow:hover {
+    cursor: pointer;
+}
+.cgmaster .cgbox {
+    width: 70%;
+    height: 80%;
+    background: #fff;
+    border-radius: 30px;
+    padding: 30px;
+    z-index: 202;
+}
+.cgmaster .cgbox .cgcont {
+    width: 100%;
+    height: 100%;
+}
+.cgmaster .cgbox .cgcont .cgformbox {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.cgmaster .cgbox .cgcont .cgformbox h5 {
+    width: 100%;
+    font-size: 40px;
+    font-family: Helvetica-Bold;
+    color: #80BC00;
+    margin: 20px 0px;
+}
+.cgmaster .cgbox .cgcont .cgformbox form {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.cgmaster .cgbox .cgcont .cgformbox form label {
+    width: 100%;
+    font-size: 30px;
+    font-family: Helvetica-Bold;
+    color: #828282;
+    margin: 20px 0px;
+}
+.cgmaster .cgbox .cgcont .cgformbox form select {
+    background: #80BC00;
+    width: 300px;
+    height: 60px;
+    font-size: 20px;
+    font-family: Helvetica-Bold;
+    color: #fff;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+}
+.cgmaster .cgbox .cgcont .cgformbox form .cgid {
+    width: 400px;
+    height: 50px;
+    border: none;
+    border-bottom: 2px solid #000;
+}
+.cgmaster .cgbox .cgcont .cgformbox form .buttonenviar {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cgmaster .cgbox .cgcont .cgformbox form .buttonenviar button {
+    width: 200px;
+    height: 80px;
+    margin-top: 30px;
+    border: none;
+    background: #80BC00;
+    color: #fff;
+    font-size: 30px;
+    font-family: Helvetica-Bold;
+    border-radius: 10px;
+}
+.archi {
+    display: none;
+}
+.clientesaddimg {
+    background: #80BC00;
+    color: #fff !important;
+    width: 300px !important;
+    padding: 10px;
+    border-radius: 10px;
+}
+.clientesaddimg:hover {
+    cursor: pointer;
+}
